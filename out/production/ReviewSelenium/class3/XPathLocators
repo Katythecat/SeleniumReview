@@ -1,0 +1,25 @@
+XPath
+1.Absolute too long and if some change happened we cannot access to the right element
+2.Relative
+    Formular
+    1.//tagName[@attribute='value']
+    2.//tagName[text()='InnerText']
+    3.//tagName[contains(@attribute,'value')]
+    4.//tagName[contains(text(),'value']
+
+    and / or
+use for make element more unique
+    1.//input[@id='username' and @name='username']
+    2.//input[@id='username' or @name='username']
+
+    contains
+more useful when the element is dynamic
+    1.//div[contains(@class, 'header') and starts-with(@id, 'logo')]
+    2.//a[contains(@href, 'contact')]
+    3.//div[contains(@class, 'header')]
+    4.//*[contains(text(), 'Search')]
+
+
+//input[@*='userId']  //when we don't know attribute
+//a[starts-with(text(),'Amazon')]
+//*[local-name()='svg']//*[name()='dynamic']   //deal with svg element
