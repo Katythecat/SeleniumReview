@@ -1,0 +1,43 @@
+// tagName[@attributeName='attributeValue']
+// tagName[text()='innerText']
+// tagName[contains(@attributeName,'attributeValue')]
+// tagName[contains(text(),'innerText']
+
+inspect facebook
+//attribute + text [//button[text()='Log in' and @name='Login']
+//text()+contain() [//button[text()='Log in' and contains(@name,'log')]
+//and ,or
+
+in xpath index start with 1
+
+www.orangehrm.com
+indexing
+(//input[@required='required'])[1]
+(//input[@required='required'])[position()=1]
+(//input[@required='required'])[last()] --> go to the last element
+(//input[@required='required'])[last()-1] -- > also can do this go to the second last
+
+https://app.hubspot.com/login/
+//input[@id='username']/../../../../../../../.. --> travel to parent
+//input[@id='username']/parent::div/parent::div/parent::div/parent::div/parent::form  --> travel to parent
+
+//tagName[@attributeName='value']/..
+//tagName[@attributeName='value']/parent::patentTagName
+
+//following-sibling
+//label[text()='E-Mail Address']/following-sibling::input
+
+//preceding-sibling
+//input[@id='input-email']/preceding-sibling::label
+
+https://app.hubspot.com/login/
+//i18n-string[text()='Email address']/parent::span/parent::label/parent::div/following-sibling::div/input
+
+Ancestor
+//i18n-string[normalize-space()='Email address']/ancestor::label/parent::div//following-sibling::div
+
+
+Action class
+//to scroll
+//drag drop
+//doble c
