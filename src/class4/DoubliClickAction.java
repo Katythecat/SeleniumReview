@@ -17,6 +17,7 @@ public class DoubliClickAction {
         driver.switchTo().frame("iframeResult");
         WebElement doubleClickBtn=driver.findElement(By.xpath("//button[text()='Copy Text']"));
         Actions actions=new Actions(driver);
+
         actions.doubleClick(doubleClickBtn).perform();
 
 
