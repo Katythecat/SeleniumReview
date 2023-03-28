@@ -1,0 +1,75 @@
+// tagName[@attributeName='attributeValue']
+// tagName[text()='innerText']
+// tagName[contains(@attributeName,'attributeValue')]
+// tagName[contains(text(),'innerText']
+
+inspect facebook
+//attribute + text [//button[text()='Log in' and @name='Login']
+//text()+contain() [//button[text()='Log in' and contains(@name,'log')]
+//and ,or
+
+in xpath index start with 1
+
+https://www.orangehrm.com/hris-hr-software-demo/
+indexing
+(//input[@required='required'])[1]
+(//input[@required='required'])[position()=1]
+(//input[@required='required'])[last()] --> go to the last element
+(//input[@required='required'])[last()-1] -- > also can do this go to the second last
+
+<div class ="abc" name ="cdr">
+ <label id="xc" class ="efr"></label> [w.r.t button this is preceding-sibling]
+ <button id="xyc" class ="eyfr"/>  [w.r.t label this is following-sibling]
+ <a href ="https://www.google.com"/>
+</div>
+
+div-label [pc r'ship]
+div-button[pc r'ship] --> parent chile relationship
+label-button [siblings]
+
+https://app.hubspot.com/login/
+//input[@id='username']/../../../../../../../.. --> travel to parent
+//input[@id='username']/parent::div/parent::div/parent::div/parent::div/parent::form  --> travel to parent
+
+//tagName[@attributeName='value']/..
+//tagName[@attributeName='value']/parent::patentTagName
+
+// following-sibling
+   https://naveenautomationlabs.com/opencart/index.php?route=account/login
+   //label[text()='E-Mail Address']/following-sibling::input
+
+   //input[@id='input-email']/preceding-sibling::label
+
+
+//preceding-sibling
+//input[@id='input-email']/preceding-sibling::label
+
+https://app.hubspot.com/login/
+//i18n-string[text()='Email address']/parent::span/parent::label/parent::div/following-sibling::div/input
+
+Ancestor
+//i18n-string[normalize-space()='Email address']/ancestor::label/parent::div//following-sibling::div
+
+ =======================================
+   Xpath Axes:
+    parent
+    following-sibling
+    preceding-sibling
+    ancestor
+   ======================================
+
+   // https://www.espncricinfo.com/series/australia-in-india-2022-23-1348637/india-vs-australia-2nd-odi-1348657/full-scorecard
+          // Create a generic Xpath where by changing the name of player we should be able to know the runs scored by him
+          //span[text()='Virat Kohli']/parent::span/parent::a/parent::td/following-sibling::td/strong
+
+             // Using ancestors
+          //span[text()='Virat Kohli']/ancestor::td/following-sibling::td/strong
+
+
+
+// to scroll, Drag and drop,  double, hover
+        // Mouse Actions
+           // How to perform right click
+           // How to perform double click
+           // How to perform drag and drop
+           // How to perform Mouse hover

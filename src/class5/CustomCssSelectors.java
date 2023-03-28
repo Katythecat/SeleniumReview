@@ -1,4 +1,4 @@
-package class05;
+package class5;
 
 public class CustomCssSelectors {
 
