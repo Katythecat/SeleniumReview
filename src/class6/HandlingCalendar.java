@@ -18,13 +18,14 @@ public class HandlingCalendar {
 
         //1.Identify the date that I want to select
         String year="2023";
-        String month="Aug";
-        String date="19";
+        String month="August";
+        String date="18";
         //2 click on calendar
         driver.findElement(By.xpath("//input[@id='onward_cal']")).click();
         while(true){
             //3. capture month and year
             String monthY=driver.findElement(By.xpath("//td[@class='monthTitle']")).getText();
+            System.out.println(monthY);
             String[] ym=monthY.split(" ");
             if(ym[0].equalsIgnoreCase(month) && ym[1].equalsIgnoreCase(year)){
                 List<WebElement> dates = driver.findElements(By.xpath("//table[@class='rb-monthTable first last']//tr/td"));
